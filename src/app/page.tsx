@@ -1,5 +1,5 @@
 import React from "react";
-
+import { Icon, IconButton } from "@/once-ui/components";
 import { Heading, Flex, Text, Button, Avatar, RevealFx, Arrow, Column } from "@/once-ui/components";
 import { Projects } from "@/components/work/Projects";
 
@@ -83,6 +83,7 @@ export default function Home() {
               size="m"
               arrowIcon
             >
+           
               <Flex gap="8" vertical="center">
                 {about.avatar.display && (
                   <Avatar
@@ -94,6 +95,45 @@ export default function Home() {
                 {about.title}
               </Flex>
             </Button>
+
+            <br />
+
+            <Flex
+                fitWidth
+                border="brand-alpha-medium"
+                style={{
+                  backdropFilter: "blur(var(--static-space-1))",
+                }}
+                background="brand-alpha-weak"
+                radius="full"
+                padding="4"
+                gap="8"
+                marginBottom="m"
+                vertical="center"
+                
+              >
+                <Icon paddingLeft="12" name="calendar" onBackground="brand-weak" />
+                <Flex paddingX="8">Prenota una call</Flex>
+                <IconButton
+                
+                  href={about.calendar.link}
+                  data-border="rounded"
+                  variant="secondary"
+                  icon="chevronRight"
+
+                  
+                />
+                
+                
+                
+              </Flex>
+
+              
+
+              
+            
+
+
           </RevealFx>
         </Column>
       </Column>
@@ -115,5 +155,12 @@ export default function Home() {
       <Projects range={[2]} />
       {newsletter.display && <Mailchimp newsletter={newsletter} />}
     </Column>
+
+
+
+
   );
 }
+
+
+

@@ -1,24 +1,24 @@
 import { InlineCode } from "@/once-ui/components";
+import Link from "next/link";
 
 const person = {
-  firstName: "Selene",
-  lastName: "Yu",
+  firstName: "Francesco",
+  lastName: "Strano",
   get name() {
     return `${this.firstName} ${this.lastName}`;
   },
-  role: "Design Engineer",
-  avatar: "/images/avatar.jpg",
-  location: "Asia/Jakarta", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
-  languages: ["English", "Bahasa"], // optional: Leave the array empty if you don't want to display languages
+  role: "Junior Developer",
+  avatar: "/images/avatar.jpeg",
+  location: "Europe/Rome", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
+  languages: ["Italiano 🇮🇹", "English 🇺🇸"], // optional: Leave the array empty if you don't want to display languages
 };
 
 const newsletter = {
-  display: true,
-  title: <>Subscribe to {person.firstName}'s Newsletter</>,
+  display: false,
+  title: <>Iscriviti alla NewsLetter di {person.firstName}</>,
   description: (
     <>
-      I occasionally write about design, technology, and share thoughts on the intersection of
-      creativity and engineering.
+      Ti scriverò per notizie riguardante sconti o nuovi servizi disponibili, è gratis.
     </>
   ),
 };
@@ -27,38 +27,31 @@ const social = [
   // Links are automatically displayed.
   // Import new icons in /once-ui/icons.ts
   {
-    name: "GitHub",
-    icon: "github",
-    link: "https://github.com/once-ui-system/nextjs-starter",
-  },
-  {
-    name: "LinkedIn",
-    icon: "linkedin",
-    link: "https://www.linkedin.com/company/once-ui/",
-  },
-  {
-    name: "X",
-    icon: "x",
-    link: "",
+    name: "Instagram",
+    icon: "Instagram",
+    link: "https://instagram.com/stranofrancesco17",
   },
   {
     name: "Email",
     icon: "email",
-    link: "mailto:example@gmail.com",
+    link: "mailto:info@sharkdigital.it",
   },
 ];
 
 const home = {
   label: "Home",
-  title: `${person.name}'s Portfolio`,
-  description: `Portfolio website showcasing my work as a ${person.role}`,
-  headline: <>Design engineer and builder</>,
+  title: `Portfolio di ${person.name}`,
+  description: `Mostrando i miei lavori da ${person.role}`,
+  headline: <>Junior Developer. Ecommerce, Site, Menù builder.</>,
   subline: (
     <>
-      I'm Selene, a design engineer at <InlineCode>FLY</InlineCode>, where I craft intuitive
-      <br /> user experiences. After hours, I build my own projects.
+      Sono Francesco, un'aspirante programmatore  <InlineCode>full stack</InlineCode>.
+      <br /> Il mio obiettivo è quello di rendere la tua immagine o quella del tuo brand 
+      il più professionale possibile.
     </>
+    
   ),
+  
 };
 
 const about = {
@@ -74,41 +67,80 @@ const about = {
   },
   calendar: {
     display: true,
-    link: "https://cal.com",
+    link: "https://cal.com/francesco-mqkfjq/20min",
   },
   intro: {
     display: true,
     title: "Introduction",
     description: (
       <>
-        Selene is a Jakarta-based design engineer with a passion for transforming complex challenges
-        into simple, elegant design solutions. Her work spans digital interfaces, interactive
-        experiences, and the convergence of design and technology.
+        Sono Francesco, un Junior Developer, gestore di diversi ecommerce per aziende 
+        e sviluppatore di prodotti digitali ai fini di migliorarne la visibilità, lo styling,
+        o l'intera struttura.
+
       </>
     ),
   },
   work: {
     display: true, // set to false to hide this section
-    title: "Work Experience",
+    title: "Esperienze Lavorative: ",
     experiences: [
-      {
-        company: "FLY",
-        timeframe: "2022 - Present",
-        role: "Senior Design Engineer",
+      
+       {
+        company: "Skin Tennis",
+        timeframe: "2024: Agosto - Ottobre",
+        role: "Ecommerce Developer",
         achievements: [
           <>
-            Redesigned the UI/UX for the FLY platform, resulting in a 20% increase in user
-            engagement and 30% faster load times.
+            Mi sono occupato della realizzazione di un ecommerce basato su prodotti a tema lusso. 
+            Ho utilizzato svariate tecnologie per lo styling, pagamenti e newsletter.
           </>,
           <>
-            Spearheaded the integration of AI tools into design workflows, enabling designers to
-            iterate 50% faster.
+            Accordandomi con il brand, abbiamo scelto i copy adatti e basati sul buyer personas, configurato i profili social 
+            e successivamente aggiunto uno store locator e molto altro.
+            
+          </>,
+          
+        ],
+        images: [
+          // optional: leave the array empty if you don't want to display images
+          {
+            src: "/images/projects/project-01/cover-01.png",
+            
+            alt: "Once UI Project",
+            width: 16,
+            height: 9,
+          },
+          {
+            src: "/images/projects/project-01/cover-05.png",
+            alt: "Project image",
+            width: 16,
+            height: 9,
+            
+          },
+        ],
+        
+      },
+      {
+        company: "Seven Paradise",
+        timeframe: "2023-2024",
+        role: "Designer, Site Developer",
+        achievements: [
+          <>
+            Seven Paradise è stato un ecommerce di magliette personalizzate con diverse tematiche,
+            rappresentava uno stile di libertà associato ad un design dai colori molto accesi.
+          </>,
+          <>
+            Mi sono occupato dello sviluppo totale del sito, oltre alla realizzazione dei prodotti
+            via strumenti di fotomontaggio, per poi mandarli in produzione e occuparmi delle vendite fino a 
+            esaurimento scorte.
           </>,
         ],
         images: [
           // optional: leave the array empty if you don't want to display images
           {
-            src: "/images/projects/project-01/cover-01.jpg",
+            src: "/images/projects/project-01/cover-02.png",
+            
             alt: "Once UI Project",
             width: 16,
             height: 9,
@@ -116,34 +148,45 @@ const about = {
         ],
       },
       {
-        company: "Creativ3",
-        timeframe: "2018 - 2022",
-        role: "Lead Designer",
+        company: "Presentazione Teatro Bellini",
+        timeframe: "2021",
+        role: "Site Developer",
         achievements: [
           <>
-            Developed a design system that unified the brand across multiple platforms, improving
-            design consistency by 40%.
+            Come ultimo lavoro di presentazione delle medie, ho presentato un sito riguardante il Teatro
+            Massimo Bellini, descrivendone la storia, la posizione geografica e l'importanza del monumento in sè.
           </>,
           <>
-            Led a cross-functional team to launch a new product line, contributing to a 15% increase
-            in overall company revenue.
+            Questo è stato uno dei più grandi progetti a cui ho preso parte autonomamente nel 2021.
+            
           </>,
+          
         ],
-        images: [],
+        images: [
+          // optional: leave the array empty if you don't want to display images
+          {
+            src: "/images/projects/project-01/cover-03.png",
+            
+            alt: "Once UI Project",
+            width: 16,
+            height: 9,
+          },
+        ],
+        
       },
     ],
   },
   studies: {
     display: true, // set to false to hide this section
-    title: "Studies",
+    title: "Titoli di Studio",
     institutions: [
       {
-        name: "University of Jakarta",
-        description: <>Studied software engineering.</>,
+        name: "IIS Marconi-Mangano",
+        description: <>Scuola superiore di secondo grado: informatico.</>,
       },
       {
-        name: "Build the Future",
-        description: <>Studied online marketing and personal branding.</>,
+        name: "Algorithmics",
+        description: <>Corso di programmazione Python</>,
       },
     ],
   },
@@ -152,18 +195,20 @@ const about = {
     title: "Technical skills",
     skills: [
       {
-        title: "Figma",
-        description: <>Able to prototype in Figma with Once UI with unnatural speed.</>,
+        title: "Shopify",
+        description: <>Una delle mie tecnologie / tools preferiti è Shopify, attraverso il cui realizzo la maggior parte degli ecommerce che mi vengono commissionati.</>,
         // optional: leave the array empty if you don't want to display images
         images: [
           {
-            src: "/images/projects/project-01/cover-02.jpg",
+            src: "/images/projects/project-01/cover-05.png",
             alt: "Project image",
             width: 16,
             height: 9,
+            
           },
+          
           {
-            src: "/images/projects/project-01/cover-03.jpg",
+            src: "/images/projects/project-01/cover-06.png",
             alt: "Project image",
             width: 16,
             height: 9,
@@ -171,8 +216,8 @@ const about = {
         ],
       },
       {
-        title: "Next.js",
-        description: <>Building next gen apps with Next.js + Once UI + Supabase.</>,
+        title: "Photoshop",
+        description: <>Photoshop è il mio tool preferito per la realizzazione o modifica di contenuti per i miei siti o lavori.</>,
         // optional: leave the array empty if you don't want to display images
         images: [
           {
@@ -196,9 +241,9 @@ const blog = {
 };
 
 const work = {
-  label: "Work",
+  label: "Works",
   title: "My projects",
-  description: `Design and dev projects by ${person.name}`,
+  description: `Design e progetti di ${person.name}`,
   // Create new project pages by adding a new .mdx file to app/blog/posts
   // All projects will be listed on the /home and /work routes
 };

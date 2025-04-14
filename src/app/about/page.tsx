@@ -154,14 +154,23 @@ export default function About() {
                 vertical="center"
               >
                 <Icon paddingLeft="12" name="calendar" onBackground="brand-weak" />
-                <Flex paddingX="8">Schedule a call</Flex>
+                <Flex paddingX="8">Prenota una call</Flex>
                 <IconButton
                   href={about.calendar.link}
                   data-border="rounded"
                   variant="secondary"
                   icon="chevronRight"
+
+                  
                 />
+                
+                
+                
               </Flex>
+
+              
+
+              
             )}
             <Heading className={styles.textAlign} variant="display-strong-xl">
               {person.name}
