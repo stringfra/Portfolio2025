@@ -28,7 +28,7 @@ export const Footer = () => {
           <Text paddingX="4">{person.name}</Text>
           <Text onBackground="neutral-weak">
             {/* Usage of this template requires attribution. Please don't remove the link to Once UI. */}
-            2025 
+           {/*Inserire testo levando commento e parentesti graffe*/ }
           </Text>
         </Text>
         <Flex gap="16">

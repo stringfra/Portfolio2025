@@ -45,7 +45,7 @@ const home = {
   headline: <>Junior Developer. Ecommerce, Site, Menù builder.</>,
   subline: (
     <>
-      Sono Francesco, un'aspirante programmatore  <InlineCode>full stack</InlineCode>.
+      Sono Francesco, un giovane <InlineCode>programmatore</InlineCode>.
       <br /> Il mio obiettivo è quello di rendere la tua immagine o quella del tuo brand 
       il più professionale possibile.
     </>
@@ -96,8 +96,8 @@ const about = {
             Ho utilizzato svariate tecnologie per lo styling, pagamenti e newsletter.
           </>,
           <>
-            Accordandomi con il brand, abbiamo scelto i copy adatti e basati sul buyer personas, configurato i profili social 
-            e successivamente aggiunto uno store locator e molto altro.
+            In collaborazione con il brand, abbiamo scelto i copy adatti e basati sul buyer personas, configurato i profili social 
+            e aggiunto uno store locator e molto altro.
             
           </>,
           
@@ -127,12 +127,12 @@ const about = {
         role: "Designer, Site Developer",
         achievements: [
           <>
-            Seven Paradise è stato un ecommerce di magliette personalizzate con diverse tematiche,
+            Seven Paradise è stato un ecommerce di t-shirt personalizzate con diverse tematiche,
             rappresentava uno stile di libertà associato ad un design dai colori molto accesi.
           </>,
           <>
             Mi sono occupato dello sviluppo totale del sito, oltre alla realizzazione dei prodotti
-            via strumenti di fotomontaggio, per poi mandarli in produzione e occuparmi delle vendite fino a 
+            grafici, per poi mandarli in produzione e occuparmi delle vendite fino a 
             esaurimento scorte.
           </>,
         ],
@@ -148,16 +148,16 @@ const about = {
         ],
       },
       {
-        company: "Presentazione Teatro Bellini",
+        company: "Sito Vetrina Teatro Bellini",
         timeframe: "2021",
         role: "Site Developer",
         achievements: [
           <>
-            Come ultimo lavoro di presentazione delle medie, ho presentato un sito riguardante il Teatro
+            Nell'ambito scolastico, ho presentato un sito riguardante il Teatro
             Massimo Bellini, descrivendone la storia, la posizione geografica e l'importanza del monumento in sè.
           </>,
           <>
-            Questo è stato uno dei più grandi progetti a cui ho preso parte autonomamente nel 2021.
+            Questo è stato una delle prima attività svolte autonomamente nel 2021
             
           </>,
           
@@ -174,8 +174,37 @@ const about = {
         ],
         
       },
+      {
+        company: "Estrattore dati Google Maps",
+        timeframe: "2025",
+        role: "Full-Project Developer",
+        achievements: [
+          <>
+            Mi sono occupato di un progetto in locale basato in javascript che si occupa di estrarre dati di attività mediante un'estensione Chrome che cattura alcune parti di codice per estrapolare i dati, con la possibilità di estrarre in formati .csv 
+          </>,
+          <>
+            Ciò riesce a permettere all'utente di ottenere informazioni delle attività registrate più comodamente e velocemente.
+            
+          </>,
+          
+        ],
+        images: [
+          // optional: leave the array empty if you don't want to display images
+          {
+            src: "/images/projects/project-01/gmaps-exc.png",
+            
+            alt: "Once UI Project",
+            width: 16,
+            height: 9,
+          },
+        ],
+        
+      },
+
     ],
   },
+  
+  
   studies: {
     display: true, // set to false to hide this section
     title: "Titoli di Studio",
