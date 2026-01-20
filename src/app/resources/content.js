@@ -34,7 +34,7 @@ const social = [
   {
     name: "Email",
     icon: "email",
-    link: "mailto:info@sharkdigital.it",
+    link: "mailto:services@stranofrancesco.com",
   },
 ];
 
