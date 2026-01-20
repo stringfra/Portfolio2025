@@ -66,7 +66,7 @@ const about = {
     display: true,
   },
   calendar: {
-    display: true,
+    display: false,  //FA IL DISPLAY DEL PULSANTE PER RICEVERE LE CALL ATTUALMENTE IMPOSTATO COME FALSO
     link: "https://cal.com/francesco-mqkfjq/20min",
   },
   intro: {
@@ -85,6 +85,42 @@ const about = {
     display: true, // set to false to hide this section
     title: "Esperienze Lavorative: ",
     experiences: [
+
+      {
+        company: "Puro Platino",
+        timeframe: "2025 - In Gestione",
+        role: "Designer, Site Developer",
+        achievements: [
+          <>
+            Puroplatino nasce in Italia, con forte legame alla tradizione orafo-gioielliera (la Valenza è una delle zone
+            storiche del settore) e con l’obiettivo di proporre gioielli esclusivi in platino abbinati a diamanti lab-grown 
+            (cioè creati in laboratorio).
+          </>,
+          <>
+            Realizzazione completa del sito web ufficiale del brand. 
+            Il progetto è stato sviluppato con un’estetica luxury, ponendo particolare attenzione all’esperienza utente,
+            alla coerenza visiva con l’identità del marchio e alla valorizzazione dei prodotti in platino,
+            sia a livello visivo che narrativo.
+          </>,
+        ],
+        images: [
+          // optional: leave the array empty if you don't want to display images
+          {
+            src: "/images/projects/project-01/puro1.png",
+            
+            alt: "Once UI Project",
+            width: 16,
+            height: 9,
+          },
+          {
+            src: "/images/projects/project-01/puro2.png",
+            
+            alt: "Once UI Project",
+            width: 16,
+            height: 9,
+          },
+        ],
+      },
       
        {
         company: "Skin Tennis",
