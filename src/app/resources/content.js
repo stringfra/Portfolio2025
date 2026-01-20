@@ -114,10 +114,10 @@ const about = {
           },
           {
             src: "/images/projects/project-01/puro2.png",
-            
-            alt: "Once UI Project",
+            alt: "Project image",
             width: 16,
             height: 9,
+            
           },
         ],
       },
